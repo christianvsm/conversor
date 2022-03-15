@@ -44,36 +44,36 @@ async function clique() {
     if (select2.value === "R$ Real Brasileiro" && select.value === "Є Euro") {
         let valoreuro = inputReais / euro
         let valorreal = inputReais
-        moedareal = valorreal.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+        moedareal.innerHTML = valorreal.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
         moedadolar.innerHTML = valoreuro.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })
     }
 
     if (select2.value === "U$ Dólar Americano" && select.value === "R$ Real Brasileiro") {
         let valorreal = dolar * inputReais
         let valordolar = inputReais
-        moedareal = valordolar.toLocaleString('en-us', { style: 'currency', currency: 'USD' })
-        moedadolar = valorreal.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+        moedareal.innerHTML = valordolar.toLocaleString('en-us', { style: 'currency', currency: 'USD' })
+        moedadolar.innerHTML = valorreal.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
     }
 
     if (select2.value === "U$ Dólar Americano" && select.value === "U$ Dólar Americano") {
         let valorreal = inputReais
         let valordolar = inputReais
-        moedareal = valordolar.toLocaleString('en-us', { style: 'currency', currency: 'USD' })
-        moedadolar = valorreal.toLocaleString('en-us', { style: 'currency', currency: 'USD' })
+        moedareal.innerHTML = valordolar.toLocaleString('en-us', { style: 'currency', currency: 'USD' })
+        moedadolar.innerHTML = valorreal.toLocaleString('en-us', { style: 'currency', currency: 'USD' })
     }
 
     if (select2.value === "Є Euro" && select.value === "Є Euro") {
-        let valorreal =  inputReais
+        let valorreal = inputReais
         let valordolar = inputReais
-        moedareal = valordolar.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })
-        moedadolar = valorreal.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })
+        moedareal.innerHTML = valordolar.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })
+        moedadolar.innerHTML = valorreal.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })
     }
 
     if (select2.value === "R$ Real Brasileiro" && select.value === "R$ Real Brasileiro") {
         let valorreal =  inputReais
         let valordolar = inputReais
-        moedareal = valordolar.toLocaleString('pe-br', { style: 'currency', currency: 'BRL' })
-        moedadolar = valorreal.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+        moedareal.innerHTML = valordolar.toLocaleString('pe-br', { style: 'currency', currency: 'BRL' })
+        moedadolar.innerHTML = valorreal.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
     }
 
 
