@@ -55,49 +55,29 @@ async function clique() {
         moedadolar = valorreal.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
     }
 
-
-
-}
-
-function desabilitaOpcao() {
-    if (select2.value === "Є Euro") {
-        document.getElementById('E').setAttribute('disabled', '');
-    } else {
-        document.getElementById('E').removeAttribute('disabled', '');
+    if (select2.value === "U$ Dólar Americano" && select.value === "U$ Dólar Americano") {
+        let valorreal = inputReais
+        let valordolar = inputReais
+        moedareal = valordolar.toLocaleString('en-us', { style: 'currency', currency: 'USD' })
+        moedadolar = valorreal.toLocaleString('en-us', { style: 'currency', currency: 'USD' })
     }
 
-    if (select2.value === "U$ Dólar Americano") {
-        document.getElementById('D').setAttribute('disabled', '');
-    } else {
-        document.getElementById('D').removeAttribute('disabled', '');
+    if (select2.value === "Є Euro" && select.value === "Є Euro") {
+        let valorreal =  inputReais
+        let valordolar = inputReais
+        moedareal = valordolar.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })
+        moedadolar = valorreal.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })
     }
 
-    if (select2.value === "R$ Real Brasileiro") {
-        document.getElementById('R').setAttribute('disabled', '');
-    } else {
-        document.getElementById('R').removeAttribute('disabled', '');
+    if (select2.value === "R$ Real Brasileiro" && select.value === "R$ Real Brasileiro") {
+        let valorreal =  inputReais
+        let valordolar = inputReais
+        moedareal = valordolar.toLocaleString('pe-br', { style: 'currency', currency: 'BRL' })
+        moedadolar = valorreal.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
     }
 
-}
 
-function desabilitaOpcao2() {
-    if (select.value === "U$ Dólar Americano") {
-        document.getElementById('D1').setAttribute('disabled', '');
-    } else {
-        document.getElementById('D1').removeAttribute('disabled', '');
-    }
 
-    if (select.value === "R$ Real Brasileiro") {
-        document.getElementById('R1').setAttribute('disabled', '');
-    } else {
-        document.getElementById('R1').removeAttribute('disabled', '');
-    }
-
-    if (select.value === "Є Euro") {
-        document.getElementById('E1').setAttribute('disabled', '');
-    } else {
-        document.getElementById('E1').removeAttribute('disabled', '');
-    }
 }
 
 function trocamoeda() {
