@@ -70,7 +70,7 @@ async function clique() {
     }
 
     if (select2.value === "R$ Real Brasileiro" && select.value === "R$ Real Brasileiro") {
-        let valorreal =  inputReais
+        let valorreal = inputReais
         let valordolar = inputReais
         moedareal.innerHTML = valordolar.toLocaleString('pe-br', { style: 'currency', currency: 'BRL' })
         moedadolar.innerHTML = valorreal.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
