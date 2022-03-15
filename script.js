@@ -135,6 +135,3 @@ select2.addEventListener("change", trocamoeda2)
 select.addEventListener("change", clique)
 select2.addEventListener("change", clique)
 
-select.addEventListener("input", desabilitaOpcao2)
-select2.addEventListener("input", desabilitaOpcao)
-
