@@ -29,13 +29,13 @@ async function clique() {
     }
 
     if (select2.value === "U$ Dólar Americano" && select.value === "Є Euro") {
-        let valoreuro = (euro * inputReais) / dolar
+        let valoreuro = (dolar * inputReais) / euro
         let valordolar = inputReais
         moedareal.innerHTML = valordolar.toLocaleString('en-us', { style: 'currency', currency: 'USD' })
         moedadolar.innerHTML = valoreuro.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })
     }
     if (select2.value === "Є Euro" && select.value === "U$ Dólar Americano") {
-        let valordolar = ((dolar * inputReais) / euro)
+        let valordolar = ((euro * inputReais) / dolar)
         let valoreuro = inputReais
         moedareal.innerHTML = valoreuro.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })
         moedadolar.innerHTML = valordolar.toLocaleString('en-us', { style: 'currency', currency: 'USD' })
